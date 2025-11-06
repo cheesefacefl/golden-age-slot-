@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Age Slots - Vintage Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="slot-machine">
+            <!-- Machine Header -->
+            <div class="machine-top">
+                <div class="decorative-crown"></div>
+                <h1 class="title">GOLDEN AGE</h1>
+                <div class="subtitle">Classic Slots</div>
+            </div>
+
+            <!-- Display Panel -->
+            <div class="display-panel">
+                <div class="credits-display">
+                    <span class="label">CREDITS</span>
+                    <span class="value" id="credits">100</span>
+                </div>
+                <div class="bet-display">
+                    <span class="label">BET</span>
+                    <span class="value" id="bet">10</span>
+                </div>
+                <div class="win-display">
+                    <span class="label">WIN</span>
+                    <span class="value" id="win">0</span>
+                </div>
+            </div>
+
+            <!-- Reels Container -->
+            <div class="reels-container">
+                <div class="decorative-border-top"></div>
+
+                <div class="reels-window">
+                    <div class="reel-wrapper">
+                        <div class="reel" id="reel1">
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">⭐</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">🍀</div>
+                            <div class="symbol">👑</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                        </div>
+                    </div>
+
+                    <div class="reel-wrapper">
+                        <div class="reel" id="reel2">
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">⭐</div>
+                            <div class="symbol">👑</div>
+                            <div class="symbol">🍀</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">🍒</div>
+                        </div>
+                    </div>
+
+                    <div class="reel-wrapper">
+                        <div class="reel" id="reel3">
+                            <div class="symbol">💎</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">⭐</div>
+                            <div class="symbol">🔔</div>
+                            <div class="symbol">🍀</div>
+                            <div class="symbol">7️⃣</div>
+                            <div class="symbol">👑</div>
+                            <div class="symbol">💎</div>
+                            <div class="symbol">🍒</div>
+                            <div class="symbol">⭐</div>
+                        </div>
+                    </div>
+
+                    <div class="win-line"></div>
+                </div>
+
+                <div class="decorative-border-bottom"></div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <div class="bet-controls">
+                    <button class="bet-button" id="betDown">-</button>
+                    <span class="bet-label">Bet Amount</span>
+                    <button class="bet-button" id="betUp">+</button>
+                </div>
+
+                <button class="spin-button" id="spinButton">
+                    <div class="button-shine"></div>
+                    <span>SPIN</span>
+                </button>
+
+                <div class="lever-container">
+                    <div class="lever" id="lever">
+                        <div class="lever-handle"></div>
+                        <div class="lever-ball"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payout Table -->
+            <div class="payout-panel">
+                <div class="payout-title">PAYOUTS</div>
+                <div class="payout-grid">
+                    <div class="payout-row">
+                        <span>👑👑👑</span>
+                        <span>×100</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>7️⃣7️⃣7️⃣</span>
+                        <span>×50</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>💎💎💎</span>
+                        <span>×25</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>🔔🔔🔔</span>
+                        <span>×15</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>⭐⭐⭐</span>
+                        <span>×10</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>🍀🍀🍀</span>
+                        <span>×8</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>🍒🍒🍒</span>
+                        <span>×5</span>
+                    </div>
+                    <div class="payout-row">
+                        <span>Any 2 🍒</span>
+                        <span>×2</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Message Display -->
+            <div class="message-display" id="message"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
