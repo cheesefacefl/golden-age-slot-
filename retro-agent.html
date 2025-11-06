@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⏮️ Retro Aesthetic Generator Agent</title>
+    <link rel="stylesheet" href="retro-agent-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⏮️ RETRO AESTHETIC GENERATOR</h1>
+            <p class="tagline">Transform modern concepts into vintage digital experiences</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="concept">What do you want to retrofy?</label>
+                <input type="text" id="concept" placeholder="e.g., todo list, calculator, chat app, weather widget...">
+            </div>
+
+            <div class="input-group">
+                <label for="description">Brief description (optional)</label>
+                <textarea id="description" rows="3" placeholder="Add details about features, layout, or specific elements..."></textarea>
+            </div>
+
+            <div class="style-selector">
+                <label>Select Retro Styles:</label>
+                <div class="style-options">
+                    <label class="style-option">
+                        <input type="checkbox" value="arcade" checked>
+                        <span class="style-badge arcade">🕹️ 80s Arcade</span>
+                    </label>
+                    <label class="style-option">
+                        <input type="checkbox" value="win95" checked>
+                        <span class="style-badge win95">💾 Windows 95</span>
+                    </label>
+                    <label class="style-option">
+                        <input type="checkbox" value="terminal" checked>
+                        <span class="style-badge terminal">💻 Terminal</span>
+                    </label>
+                    <label class="style-option">
+                        <input type="checkbox" value="web1" checked>
+                        <span class="style-badge web1">🌐 Web 1.0</span>
+                    </label>
+                    <label class="style-option">
+                        <input type="checkbox" value="lcd" checked>
+                        <span class="style-badge lcd">📟 LCD Display</span>
+                    </label>
+                </div>
+            </div>
+
+            <button id="generateBtn" class="generate-btn">
+                <span class="btn-text">🎨 GENERATE RETRO VERSIONS</span>
+            </button>
+        </div>
+
+        <div id="outputSection" class="output-section hidden">
+            <h2>Generated Retro Versions</h2>
+            <div id="outputContainer" class="output-container"></div>
+        </div>
+
+        <div class="info-section">
+            <h3>💡 How It Works</h3>
+            <ul>
+                <li><strong>Enter a Concept:</strong> Any modern app, widget, or interface</li>
+                <li><strong>Select Styles:</strong> Choose which retro eras you want</li>
+                <li><strong>Get Prototypes:</strong> Receive working HTML/CSS/JS files for each style</li>
+                <li><strong>Customize & Use:</strong> Download, modify, and use in your projects!</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="retro-agent.js"></script>
+</body>
+</html>
